@@ -1,0 +1,54 @@
+body { margin: 0 }
+
+#app {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #e0e0e0;
+}
+
+#dice {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.point {
+	align-self: center;
+	justify-self: center;
+	width: 25px;
+	height: 25px;
+	background: #000;
+	border-radius: 50px;
+	visibility: hidden;
+}
+
+#control { 
+	width: 200px;
+	display: flex;
+	justify-content: center; 
+}
+
+#button {
+	margin-top: 2rem;
+ 	padding: 10px;
+ 	width: 100%;
+ 	font-size: 1em;
+ 	border-width: 0;
+ 	border-radius: 2px;
+ 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+ 	background-color: #03a9f4;
+ 	color: #eee;
+ 	transition: background-color .3s;
+}
+
+#button:hover {
+	background-color: #1565c0;
+	cursor: pointer;
+}
