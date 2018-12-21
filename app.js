@@ -17,14 +17,14 @@ const button = document.getElementById('button');
 //Our dice object
 let dice = {
 	sides: 6,
-	getRandom: function () {
+	getRandom () {
 		let number = Math.floor(Math.random() * this.sides) + 1;
     	return number;
 	},
-	showPoint: function (point) {
+	showPoint (point) {
 		point.style.visibility = 'visible';
 	},
-	printNumber: function (random) {
+	printNumber (random) {
 		if (random == 1) { 
 			this.showPoint(fifthPoint);
 
@@ -59,15 +59,14 @@ let dice = {
 			this.showPoint(ninthPoint);
 		}
 	},
-	clear: function () {
+	clear () {
 		for (let i = 0; i < points.length; i++) {
 			points[i].style.visibility = 'hidden';
 		}
 	}
-
 }
 
-button.onclick = function () {
+button.onclick = () => {
 	let randomNumber = dice.getRandom();
 	dice.clear();
 	dice.printNumber(randomNumber);
