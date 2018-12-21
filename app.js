@@ -2,13 +2,11 @@
 
 //Get each point from dice
 const firstPoint = document.getElementById('first');
-const secondPoint = document.getElementById('second');
 const thirdPoint = document.getElementById('third');
 const fourthPoint = document.getElementById('fourth');
 const fifthPoint = document.getElementById('fifth');
 const sixthPoint = document.getElementById('sixth');
 const seventhPoint = document.getElementById('seventh');
-const eighthPoint = document.getElementById('eighth');
 const ninthPoint = document.getElementById('ninth');
 const points = document.getElementsByClassName('point');
 
